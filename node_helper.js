@@ -30,6 +30,10 @@ module.exports = NodeHelper.create({
 				if (message.hasOwnProperty('status')){
       				console.log("[" + self.name + "] " + message.status);
       			}
+				if (message.hasOwnProperty('triggered')){
+					self.sendSocketNotification('triggered', message.triggered);
+					console.log("[" + self.name + "] hotword " + message.triggered + " was triggered");
+				}
 			}
 			catch(err) {
 				console.log("[" + self.name + "] not a jason answer");
