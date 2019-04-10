@@ -1,3 +1,12 @@
+/**
+ * @file smartmirror-snowboy-hotword.js
+ *
+ * @author nkucza
+ * @license MIT
+ *
+ * @see  https://github.com/NKucza/smartmirror-snowboy-hotword
+ */
+
 Module.register('smartmirror-snowboy-hotword', {
 
 	defaults: {
